@@ -15,6 +15,13 @@
 		4ABB8ABB24A416ED008E472C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABB8AB924A416ED008E472C /* LaunchScreen.storyboard */; };
 		4ABB8AC624A416ED008E472C /* xylophone_lifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB8AC524A416ED008E472C /* xylophone_lifeTests.swift */; };
 		4ABB8AD124A416ED008E472C /* xylophone_lifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB8AD024A416ED008E472C /* xylophone_lifeUITests.swift */; };
+		4AD7FBFA24A451980090873B /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AD7FBF324A451970090873B /* B.wav */; };
+		4AD7FBFB24A451980090873B /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AD7FBF424A451980090873B /* E.wav */; };
+		4AD7FBFC24A451980090873B /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AD7FBF524A451980090873B /* A.wav */; };
+		4AD7FBFD24A451980090873B /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AD7FBF624A451980090873B /* C.wav */; };
+		4AD7FBFE24A451980090873B /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AD7FBF724A451980090873B /* F.wav */; };
+		4AD7FBFF24A451980090873B /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AD7FBF824A451980090873B /* D.wav */; };
+		4AD7FC0024A451980090873B /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AD7FBF924A451980090873B /* G.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4ABB8AAB24A416EB008E472C /* xylophone-life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xylophone-life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ABB8AAB24A416EB008E472C /* Xylophone Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xylophone Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABB8AAE24A416EB008E472C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ABB8AB024A416EB008E472C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4ABB8AB224A416EB008E472C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,13 @@
 		4ABB8ACC24A416ED008E472C /* xylophone-lifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xylophone-lifeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABB8AD024A416ED008E472C /* xylophone_lifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xylophone_lifeUITests.swift; sourceTree = "<group>"; };
 		4ABB8AD224A416ED008E472C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD7FBF324A451970090873B /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = B.wav; path = "xylophone-life/Sounds/B.wav"; sourceTree = SOURCE_ROOT; };
+		4AD7FBF424A451980090873B /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = E.wav; path = "xylophone-life/Sounds/E.wav"; sourceTree = SOURCE_ROOT; };
+		4AD7FBF524A451980090873B /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = A.wav; path = "xylophone-life/Sounds/A.wav"; sourceTree = SOURCE_ROOT; };
+		4AD7FBF624A451980090873B /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = C.wav; path = "xylophone-life/Sounds/C.wav"; sourceTree = SOURCE_ROOT; };
+		4AD7FBF724A451980090873B /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = F.wav; path = "xylophone-life/Sounds/F.wav"; sourceTree = SOURCE_ROOT; };
+		4AD7FBF824A451980090873B /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = D.wav; path = "xylophone-life/Sounds/D.wav"; sourceTree = SOURCE_ROOT; };
+		4AD7FBF924A451980090873B /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = G.wav; path = "xylophone-life/Sounds/G.wav"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +103,7 @@
 		4ABB8AAC24A416EB008E472C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4ABB8AAB24A416EB008E472C /* xylophone-life.app */,
+				4ABB8AAB24A416EB008E472C /* Xylophone Life.app */,
 				4ABB8AC124A416ED008E472C /* xylophone-lifeTests.xctest */,
 				4ABB8ACC24A416ED008E472C /* xylophone-lifeUITests.xctest */,
 			);
@@ -99,6 +113,7 @@
 		4ABB8AAD24A416EB008E472C /* xylophone-life */ = {
 			isa = PBXGroup;
 			children = (
+				4AD7FC0124A4519F0090873B /* Sound */,
 				4ABB8AAE24A416EB008E472C /* AppDelegate.swift */,
 				4ABB8AB024A416EB008E472C /* SceneDelegate.swift */,
 				4ABB8AB224A416EB008E472C /* ViewController.swift */,
@@ -128,6 +143,20 @@
 			path = "xylophone-lifeUITests";
 			sourceTree = "<group>";
 		};
+		4AD7FC0124A4519F0090873B /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				4AD7FBF524A451980090873B /* A.wav */,
+				4AD7FBF324A451970090873B /* B.wav */,
+				4AD7FBF624A451980090873B /* C.wav */,
+				4AD7FBF824A451980090873B /* D.wav */,
+				4AD7FBF424A451980090873B /* E.wav */,
+				4AD7FBF724A451980090873B /* F.wav */,
+				4AD7FBF924A451980090873B /* G.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,7 +174,7 @@
 			);
 			name = "xylophone-life";
 			productName = "xylophone-life";
-			productReference = 4ABB8AAB24A416EB008E472C /* xylophone-life.app */;
+			productReference = 4ABB8AAB24A416EB008E472C /* Xylophone Life.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4ABB8AC024A416ED008E472C /* xylophone-lifeTests */ = {
@@ -232,9 +261,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD7FBFF24A451980090873B /* D.wav in Resources */,
+				4AD7FBFC24A451980090873B /* A.wav in Resources */,
+				4AD7FBFB24A451980090873B /* E.wav in Resources */,
 				4ABB8ABB24A416ED008E472C /* LaunchScreen.storyboard in Resources */,
 				4ABB8AB824A416ED008E472C /* Assets.xcassets in Resources */,
 				4ABB8AB624A416EB008E472C /* Main.storyboard in Resources */,
+				4AD7FC0024A451980090873B /* G.wav in Resources */,
+				4AD7FBFA24A451980090873B /* B.wav in Resources */,
+				4AD7FBFD24A451980090873B /* C.wav in Resources */,
+				4AD7FBFE24A451980090873B /* F.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +478,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.aminah.xylophone-life";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Xylophone Life";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,7 +496,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.aminah.xylophone-life";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Xylophone Life";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

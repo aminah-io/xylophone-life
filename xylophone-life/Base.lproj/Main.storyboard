@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,225 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Xylophone_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eAR-gO-28a">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6f-xv-wUE" userLabel="C">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="112.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXz-Ze-IiI">
+                                                <rect key="frame" x="10" y="0.0" width="394" height="112.5"/>
+                                                <color key="backgroundColor" red="0.9871312413808595" green="0.53432795777461828" blue="0.50639132047949542" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1qG-1q-Vbv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="AXz-Ze-IiI" firstAttribute="top" secondItem="h6f-xv-wUE" secondAttribute="top" id="CnI-KB-0Nv"/>
+                                            <constraint firstItem="AXz-Ze-IiI" firstAttribute="leading" secondItem="h6f-xv-wUE" secondAttribute="leading" constant="10" id="MkV-C7-psz"/>
+                                            <constraint firstAttribute="bottom" secondItem="AXz-Ze-IiI" secondAttribute="bottom" id="UK6-dF-tH7"/>
+                                            <constraint firstAttribute="trailing" secondItem="AXz-Ze-IiI" secondAttribute="trailing" constant="10" id="zeh-z2-XT2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GfO-4I-Uwv" userLabel="D">
+                                        <rect key="frame" x="0.0" y="117.5" width="414" height="112.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfp-3O-Bjf">
+                                                <rect key="frame" x="20" y="0.0" width="374" height="112.5"/>
+                                                <color key="backgroundColor" red="0.94464824267619629" green="0.73146406525204521" blue="0.50640427326884641" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                                <state key="normal" title="D">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aW6-0c-XjT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Nfp-3O-Bjf" firstAttribute="top" secondItem="GfO-4I-Uwv" secondAttribute="top" id="Meb-tA-JUS"/>
+                                            <constraint firstAttribute="bottom" secondItem="Nfp-3O-Bjf" secondAttribute="bottom" id="Tnx-kt-JBT"/>
+                                            <constraint firstItem="Nfp-3O-Bjf" firstAttribute="leading" secondItem="GfO-4I-Uwv" secondAttribute="leading" constant="20" id="gdh-z8-rxR"/>
+                                            <constraint firstAttribute="trailing" secondItem="Nfp-3O-Bjf" secondAttribute="trailing" constant="20" id="rcp-xX-Dhd"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JC7-Fu-3Bn" userLabel="E">
+                                        <rect key="frame" x="0.0" y="235" width="414" height="112.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35K-wO-1UB">
+                                                <rect key="frame" x="30" y="0.0" width="354" height="112.5"/>
+                                                <color key="backgroundColor" red="0.92133218050003052" green="0.90244945509161389" blue="0.62724984175415333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                                <state key="normal" title="E">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ALB-6g-xrQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="35K-wO-1UB" firstAttribute="leading" secondItem="JC7-Fu-3Bn" secondAttribute="leading" constant="30" id="JI6-HV-fWu"/>
+                                            <constraint firstAttribute="bottom" secondItem="35K-wO-1UB" secondAttribute="bottom" id="Rgj-XS-K4g"/>
+                                            <constraint firstItem="35K-wO-1UB" firstAttribute="top" secondItem="JC7-Fu-3Bn" secondAttribute="top" id="VGs-7Q-tOm"/>
+                                            <constraint firstAttribute="trailing" secondItem="35K-wO-1UB" secondAttribute="trailing" constant="30" id="VWc-qD-E0g"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4F7-C4-zNK" userLabel="F">
+                                        <rect key="frame" x="0.0" y="352.5" width="414" height="113"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0b8-Qu-qXO">
+                                                <rect key="frame" x="40" y="0.0" width="334" height="113"/>
+                                                <color key="backgroundColor" red="0.81617083646369082" green="0.92133218050003052" blue="0.64041791034901197" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                                <state key="normal" title="F">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xLr-aE-soP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="0b8-Qu-qXO" secondAttribute="trailing" constant="40" id="bNB-QU-LK9"/>
+                                            <constraint firstItem="0b8-Qu-qXO" firstAttribute="top" secondItem="4F7-C4-zNK" secondAttribute="top" id="eYf-vl-BxG"/>
+                                            <constraint firstAttribute="bottom" secondItem="0b8-Qu-qXO" secondAttribute="bottom" id="ige-xi-AW6"/>
+                                            <constraint firstItem="0b8-Qu-qXO" firstAttribute="leading" secondItem="4F7-C4-zNK" secondAttribute="leading" constant="40" id="ru4-LY-WZ5"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tin-Zq-hWr" userLabel="G">
+                                        <rect key="frame" x="0.0" y="470.5" width="414" height="112.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egK-fy-X9O">
+                                                <rect key="frame" x="50" y="0.0" width="314" height="112.5"/>
+                                                <color key="backgroundColor" red="0.71418126515773106" green="0.87711368711587645" blue="0.92133218050003052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                                <state key="normal" title="G">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGr-bz-4mT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="egK-fy-X9O" secondAttribute="bottom" id="GH5-xY-dof"/>
+                                            <constraint firstItem="egK-fy-X9O" firstAttribute="top" secondItem="Tin-Zq-hWr" secondAttribute="top" id="I3z-Nt-geB"/>
+                                            <constraint firstAttribute="trailing" secondItem="egK-fy-X9O" secondAttribute="trailing" constant="50" id="YqW-Ll-8gx"/>
+                                            <constraint firstItem="egK-fy-X9O" firstAttribute="leading" secondItem="Tin-Zq-hWr" secondAttribute="leading" constant="50" id="udd-Md-rcn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNc-Le-4GN" userLabel="A">
+                                        <rect key="frame" x="0.0" y="588" width="414" height="112.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jn8-i7-vIV">
+                                                <rect key="frame" x="60" y="0.0" width="294" height="112.5"/>
+                                                <color key="backgroundColor" red="0.74203264729412033" green="0.63788669227419525" blue="0.92133218050003052" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                                <state key="normal" title="A">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5R2-jT-pyg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="jn8-i7-vIV" firstAttribute="leading" secondItem="hNc-Le-4GN" secondAttribute="leading" constant="60" id="Cqc-Uh-ywC"/>
+                                            <constraint firstAttribute="bottom" secondItem="jn8-i7-vIV" secondAttribute="bottom" id="bEY-pv-hMw"/>
+                                            <constraint firstItem="jn8-i7-vIV" firstAttribute="top" secondItem="hNc-Le-4GN" secondAttribute="top" id="mei-0x-eGE"/>
+                                            <constraint firstAttribute="trailing" secondItem="jn8-i7-vIV" secondAttribute="trailing" constant="60" id="uM6-fY-Fj6"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJ3-4P-cHR" userLabel="B">
+                                        <rect key="frame" x="0.0" y="705.5" width="414" height="112.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITV-8h-2Yk">
+                                                <rect key="frame" x="70" y="0.0" width="274" height="112.5"/>
+                                                <color key="backgroundColor" red="0.92133218050003052" green="0.64846278468136032" blue="0.85837538187936246" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                                <state key="normal" title="B">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVC-Rf-yBh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="ITV-8h-2Yk" firstAttribute="leading" secondItem="VJ3-4P-cHR" secondAttribute="leading" constant="70" id="6YU-ac-kM0"/>
+                                            <constraint firstAttribute="trailing" secondItem="ITV-8h-2Yk" secondAttribute="trailing" constant="70" id="UZ0-aC-2Zl"/>
+                                            <constraint firstAttribute="bottom" secondItem="ITV-8h-2Yk" secondAttribute="bottom" id="VP2-O3-nsG"/>
+                                            <constraint firstItem="ITV-8h-2Yk" firstAttribute="top" secondItem="VJ3-4P-cHR" secondAttribute="top" id="sCJ-gl-ifm"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eAR-gO-28a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="53T-TC-q9Z"/>
+                            <constraint firstItem="eAR-gO-28a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JYe-dk-BAc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eAR-gO-28a" secondAttribute="trailing" id="c4U-Tv-vSn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eAR-gO-28a" secondAttribute="bottom" id="c8G-3U-j9C"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="138"/>
         </scene>
     </scenes>
 </document>
