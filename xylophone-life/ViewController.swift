@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
     
     @IBAction func keyPressed(_ sender: UIButton) {
-        playSound(note: sender.titleLabel?.text ?? "C")
+        playSound(note: sender.currentTitle!)
     }
     
 
